@@ -1,0 +1,74 @@
+@font-face {
+    font-family: EpilepsySans;
+    src: url(./fonts/EpilepsySans.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-size: 12px;
+    font-family: 'Comfortaa', cursive;
+    letter-spacing: 5px;
+   
+}
+
+.bg-video {
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -9999;
+    background-size: cover;
+}
+
+.header a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.header {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 2px solid transparent;
+    position: absolute;
+}
+
+.header:hover {
+    transform: scale(1.5);
+    transition: 4s;
+    padding-top: 20%;
+    cursor: none;
+}
+
+.header a:focus {
+    color: #ffe35a;
+    font-size: 6px;
+    transition: 4s;
+    font-weight: 300;
+    font-family: 'Comfortaa', cursive;
+}
+
+.invis-block {
+    display: none;
+}
+
+.header a:focus > .invis-block {
+    display: block;
+}
+
+.invis-block p {
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffa75a;
+    width: 45%; 
+    padding-left: 28%;
+    letter-spacing: 0;
+    transition: 3s;
+}
